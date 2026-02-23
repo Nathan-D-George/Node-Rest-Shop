@@ -1,0 +1,31 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "A NodeJS RESTful API tutorial",
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "license": "ISC",
+  "author": "Nathan George",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.2",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
