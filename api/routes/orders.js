@@ -5,7 +5,7 @@ const checkAuth = require('../middleware/check-auth');
 const OrdersController = require("../controllers/orders");
 
 // GET all
-router.get('/', checkAuth, OrdersController.orders_get_all);
+router.get('/', OrdersController.orders_get_all);
 
 // GET one
 router.get('/:orderId', checkAuth, OrdersController.order_get_one);

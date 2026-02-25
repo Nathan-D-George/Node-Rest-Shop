@@ -28,9 +28,9 @@ const upload = multer({
     fileFilter: fileFilter
 });
 
-router.get('/', checkAuth, ProductsController.get_products);
+router.get('/', ProductsController.get_products);
 
-router.get('/:id', checkAuth, ProductsController.get_one_product);
+router.get('/:id', ProductsController.get_one_product);
 
 router.post('/', checkAuth, upload.single('productImage'), ProductsController.create_product);
 
