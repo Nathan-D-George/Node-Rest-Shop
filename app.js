@@ -21,7 +21,7 @@ const mongoose = require('mongoose');
 mongoose.connect(
     "mongodb+srv://admin:"+process.env.MONGO_ATLAS_PW+"@node-rest-shop.mpqhktv.mongodb.net/?appName=node-rest-shop"
 )
-mongoose.Promie = global.Promise;
+mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
 app.use('/uploads', express.static('uploads'));
