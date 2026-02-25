@@ -18,11 +18,8 @@ const usersRoutes = require('./api/routes/users');
 const mongoose = require('mongoose');
 
 
-// "mongodb+srv://admin:" +
-// process.env.MONGO_ATLAS_PW +
-// "@node-rest-shop.mpqhktv.mongodb.net/?appName=node-rest-shop",
 mongoose.connect(
-    "mongodb+srv://admin:admin@node-rest-shop.mpqhktv.mongodb.net/?appName=node-rest-shop"
+    "mongodb+srv://admin:"+process.env.MONGO_ATLAS_PW+"@node-rest-shop.mpqhktv.mongodb.net/?appName=node-rest-shop"
 )
 mongoose.Promie = global.Promise;
 
